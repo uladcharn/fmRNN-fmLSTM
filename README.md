@@ -1,12 +1,10 @@
 # Filter banks-embedded memory-augmented Recurrent Networks (fmRNN-fmLSTM)
 
-### Paper
+This repository presents the code files are for the Filter banks-embedded memory-augmented Recurrent Networks, an extention of the memory-augmented Recurrent Networks introduced in the following paper:
 
 Do RNN and LSTM have Long Memory? ICML 2020. [[paper]](https://proceedings.icml.cc/static/paper_files/icml/2020/956-Paper.pdf)
 
 By Jingyu Zhao, Feiqing Huang, Jia Lv, Yanjie Duan, Zhen Qin, Guodong Li and Guangjian Tian.
-
-Please refer to the paper for an introduction to datasets and the required references.
 
 ### Requirements
 
@@ -23,10 +21,10 @@ Please refer to the paper for an introduction to datasets and the required refer
 
 #### Time series prediction
 
-  For example, you can run the following code to train an `mLSTM` model on the `tree7` dataset.
+  For example, you can run the following code to train an `fmLSTM` model on the `tree7` dataset using two filter banks.
 
 ```
-  python train.py --dataset 'tree7' --algorithm 'mLSTM'
+  python train.py --dataset 'tree7' --algorithm 'mLSTM' --n_banks 2
 ```
 
 **Available datasets**
@@ -70,4 +68,4 @@ Please refer to the paper for an introduction to datasets and the required refer
 - Filter bank-embedded Memory-augmented RNN: `fmRNN_fixD`
 - Filter bank-embeddedMemory-augmented LSTM: `fmLSTM_fixD`
 - Filter bank-embedded Memory-augmented RNN with homogeneous memory parameter d: `fmRNN_fixD`
-- Filter bank-embeddedMemory-augmented LSTM with homogeneous d: `fmLSTM_fixD`
+- Filter bank-embedded Memory-augmented LSTM with homogeneous d: `fmLSTM_fixD`
