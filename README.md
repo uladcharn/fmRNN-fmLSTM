@@ -39,9 +39,11 @@ By Jingyu Zhao, Feiqing Huang, Jia Lv, Yanjie Duan, Zhen Qin, Guodong Li and Gua
 - vanilla RNN: `RNN`
 - vanilla LSTM: `LSTM`
 - Memory-augmented RNN with homogeneous memory parameter d: `mRNN_fixD`
-- Memory-augmented RNN with dynamic d: `mRNN`
 - Memory-augmented LSTM with homogeneous d: `mLSTM_fixD`
-- Memory-augmented LSTM: `mLSTM`
+- Filter bank-embedded Memory-augmented RNN: `fmRNN_fixD`
+- Filter bank-embeddedMemory-augmented LSTM: `fmLSTM_fixD`
+- Filter bank-embedded Memory-augmented RNN with homogeneous memory parameter d: `fmRNN_fixD`
+- Filter bank-embedded Memory-augmented LSTM with homogeneous d: `fmLSTM_fixD`
 
 #### Review classification
 
@@ -53,19 +55,8 @@ By Jingyu Zhao, Feiqing Huang, Jia Lv, Yanjie Duan, Zhen Qin, Guodong Li and Gua
 
   Here, we have already embedded each word to a 16-dimension vector and saved the embeddings in `data.json` in `data\review_classification`. 
 
-- You can select and test different models through the `algorithm` parameter. For example, you can test the model `mLSTM_fixD` using the code below.
+- You can select and test different models through the `algorithm` parameter. For example, you can test the model `fmLSTM_fixD` using the code below.
 
   ```
-  python train.py --algorithm 'mLSTM_fixD'
+  python train.py --algorithm 'fmLSTM_fixD'
   ```
-
-**Available algorithms**
-
-- vanilla RNN: `RNN`
-- vanilla LSTM: `LSTM`
-- Memory-augmented RNN with homogeneous memory parameter d: `mRNN_fixD`
-- Memory-augmented LSTM with homogeneous d: `mLSTM_fixD`
-- Filter bank-embedded Memory-augmented RNN: `fmRNN_fixD`
-- Filter bank-embeddedMemory-augmented LSTM: `fmLSTM_fixD`
-- Filter bank-embedded Memory-augmented RNN with homogeneous memory parameter d: `fmRNN_fixD`
-- Filter bank-embedded Memory-augmented LSTM with homogeneous d: `fmLSTM_fixD`
