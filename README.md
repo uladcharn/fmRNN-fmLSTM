@@ -24,7 +24,7 @@ By Jingyu Zhao, Feiqing Huang, Jia Lv, Yanjie Duan, Zhen Qin, Guodong Li and Gua
   For example, you can run the following code to train an `fmLSTM` model on the `tree7` dataset using two filter banks.
 
 ```
-  python train.py --dataset 'tree7' --algorithm 'mLSTM' --n_banks 2
+  python train.py --dataset 'tree7' --algorithm 'fmLSTM' --n_banks 2
 ```
 
 **Available datasets**
